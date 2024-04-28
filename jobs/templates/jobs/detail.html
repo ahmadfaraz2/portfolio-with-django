@@ -1,0 +1,18 @@
+{% extends "jobs/home.html" %}
+{% load static %}
+
+
+{% block section %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Job Detail</h1>
+        <p class="lead text-body-secondary">{{job.summary}}</p>
+        <img src="{{job.image.url}}" alt="" height="300" width="300" class="img-fluid">
+        <p>
+        <a href="{% url "home" %}" target="_blank"class="btn btn-primary my-2">Back</a>
+        </p>
+        </div>
+    </div>
+    </section>
+{% endblock section %}
